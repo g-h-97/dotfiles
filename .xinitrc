@@ -1,5 +1,5 @@
 # All lines ending with `&` must be in `.xprofile` in SDDM
-# /home/hicham/bin/batnot &
+# /home/$USER/bin/batnot &
 picom &
 clipmenud &
 # All lines above the `exec dwm` are not required if using SDDM
@@ -10,5 +10,5 @@ setxkbmap -option "caps:escape" &
 unclutter --timeout 3 &
 #flameshot &
 slstatus &
-/home/hicham/bin/wallsxiv r /home/hicham/Pictures/background/ &
+/home/$USER/bin/wallsxiv r /home/$USER/Pictures/background/ &
 exec dwm

@@ -16,9 +16,9 @@ export QT_SCALE_FACTOR=1.5 picard
 export The QT_QPA_PLATFORMTHEME=gtk2
 
 # dmenu password helper
-export SUDO_ASKPASS="/home/hicham/bin/dpass"
+export SUDO_ASKPASS="/home/$USER/bin/dpass"
 
-export PATH=$PATH:/home/hicham/bin
+export PATH=$PATH:/home/$USER/bin
 # general env variables
 export EDITOR="nvim"
 export VISUAL="nvim"
