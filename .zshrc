@@ -9,7 +9,11 @@ precmd_functions+=( precmd_vcs_info )
 setopt prompt_subst
 RPROMPT="%{$fg[yellow]%}\$vcs_info_msg_0_%{$reset_color%}"
 # PROMPT=\$vcs_info_msg_0_'%# '
-zstyle ':vcs_info:git:*' formats '%b'
+zstyle ':vcs_info:*' check-for-changes true
+zstyle ':vcs_info:*' unstagedstr '>[*]'
+zstyle ':vcs_info:*' stagedstr '>[+]'
+zstyle ':vcs_info:git:*' formats '(git)>%b%u%c'
+zstyle ':vcs_info:git:*' actionformats '(%b|%a%u%c)'
 
 #PS1="%B%{$fg[blue]%}%n%{$fg[white]%}@%{$fg[white]%}%M %{$fg[blue]%}%~%{$reset_color%}$%b "
 PROMPT="%B%{$fg[blue]%}%25<…<%~%<< $% %{$reset_color%}%b "
