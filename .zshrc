@@ -1,8 +1,18 @@
 
 # Enable colors and change prompt:
 autoload -U colors && colors
+
+# Enable git status
+autoload -Uz vcs_info
+precmd_vcs_info() { vcs_info }
+precmd_functions+=( precmd_vcs_info )
+setopt prompt_subst
+RPROMPT="%{$fg[yellow]%}\$vcs_info_msg_0_%{$reset_color%}"
+# PROMPT=\$vcs_info_msg_0_'%# '
+zstyle ':vcs_info:git:*' formats '%b'
+
 #PS1="%B%{$fg[blue]%}%n%{$fg[white]%}@%{$fg[white]%}%M %{$fg[blue]%}%~%{$reset_color%}$%b "
-PS1="%B%{$fg[blue]%}%25<…<%~%<< $% %{$reset_color%}%b "
+PROMPT="%B%{$fg[blue]%}%25<…<%~%<< $% %{$reset_color%}%b "
 #PS1='%15<..<%~%<<%# '
 #%(4~|.../%3~|%~)
 #%(5~|%-1~/…/%3~|%4~)
