@@ -5,6 +5,6 @@ emulate sh -c 'source /etc/profile'
 # be commented
 
 if [[ "$(tty)" = "/dev/tty1" ]];then
-    pgrep dwm || exec startx
+    pgrep dwm || startx
 fi
 
