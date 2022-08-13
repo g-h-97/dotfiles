@@ -12,7 +12,7 @@ setxkbmap -option "caps:escape" &
 unclutter -idle 3 &
 #flameshot &
 slstatus &
-/home/$USER/bin/wallsxiv r /home/$USER/Pictures/background/ &
+wallsxiv r /home/$USER/Pictures/background/ &
 xrdb -merge ~/.Xresources
-fcitx -d &
+#fcitx -d &
 dwm
