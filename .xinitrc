@@ -14,5 +14,6 @@ unclutter -idle 3 &
 slstatus &
 wallsxiv r /home/$USER/Pictures/background/ &
 xrdb -merge ~/.Xresources
+eval "$(ssh-agent -s)"
 #fcitx -d &
 dwm
