@@ -74,7 +74,8 @@ alias \
   pc="picocom" \
   xi="doas xbps-install -y" \
   xq="xbps-query -Rs" \
-  xr="doas xbps-remove -Ro"
+  xr="doas xbps-remove -Ro" \
+  rm="rm -i"
   # poweroff="systemctl hibernate"
   md () {
       mkdir -p "$@"
