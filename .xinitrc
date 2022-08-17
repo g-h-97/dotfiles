@@ -9,10 +9,10 @@ rm -f /tmp/serverauth.* &
 dunst &
 setxkbmap -option "caps:escape" &
 #unclutter --timeout 3 &
-unclutter -idle 3 &
+# unclutter -idle 3 &
 #flameshot &
 slstatus &
-wallsxiv r /home/$USER/Pictures/background/ &
+wallsxiv r /home/$USER/Pictures/wallpapers/ &
 xrdb -merge ~/.Xresources
 eval "$(ssh-agent -s)"
 #fcitx -d &
