@@ -1,0 +1,69 @@
+# bspwm/sxhkd
+# source: https://github.com/baskerville/bspwm/blob/master/examples/sxhkdrc
+# Awesome WM Documentation
+# source: https://awesomewm.org/doc/manpages/awesome.1.html
+
+- name: DWM (Window Manager)
+  keybinds:
+    - name: "Terminal (ST)"
+      key: "[Alt] [Shift] [Enter]"
+    - name: "Change Desktop"
+      key: "[Alt] [Number]"
+    - name: "Close Session"
+      key: "[Alt] [Shift] q"
+    - name: "Window Close"
+      key: "[Alt] [Shift] c"
+    - name: "Window Next"
+      key: "[Alt] k"
+    - name: "Window Previous"
+      key: "[Alt] j"
+    - name: "Window Size +/-"
+      key: "[Alt] h/l"
+    - name: "Switch Tailling Mode"
+      key: "[Alt] [Space]"
+    - name: "Full Screen Mode"
+      key: "[Alt] [Shift] f"
+    - name: "Session Lock"
+      key: "[Alt] [Shift] l"
+    - name: "Screenshot"
+      key: "[Print Scr]"
+
+- name: ST (Terminal Emulator)
+  keybinds:
+    - name: "Zoom +"
+      key: "[Alt] [Shift] k"
+    - name: "Zoom -"
+      key: "[Alt] [Shift] j"
+
+- name: TMUX (Terminal Multiplexer
+  prefix: "[Ctrl] [Space]"
+  keybinds:
+    - name: "Pane Split Vertical"
+      key: "\""
+    - name: "Pane Split Horizontal"
+      key: "|"
+    - name: "Pane Navigation"
+      key: "h j k l"
+    - name: "Pane Sync"
+      key: "S"
+    - name: "Pane Close"
+      key: "x"
+    - name: "Session Detach"
+      key: "d"
+    - name: "Session List"
+      key: "s"
+    - name: "Session Previous"
+      key: "("
+    - name: "Session Next"
+      key: ")"
+    - name: "Session Rename"
+      key: "$"
+    - name: "Window Navigation"
+      key: "0,1...etc"
+    - name: "Window Close"
+      key: "x"
+
+- name: VIM (Text Editor)
+  keybinds:
+    - name: "Navigation"
+      key: "hjkl"
