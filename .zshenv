@@ -24,6 +24,7 @@ export GTK_THEME=Flat-Remix-GTK-Blue-Darkest-Solid-NoBorder
 export XDG_RUNTIME_DIR=/home/$USER/.tmp
 
 export PATH="$PATH:/home/$USER/.local/bin"
+#export PATH="$PATH:/home/$USER/.bscripts"
 
 # qt applications scale
 export QT_ENABLE_HIGHDPI_SCALING=1
