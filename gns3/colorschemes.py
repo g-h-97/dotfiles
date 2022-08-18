@@ -122,9 +122,6 @@ schemes = {
         'gc': '#e6e6e6',
         'color': 'light',
     },
-"""
-dwm-dark:         #0d0d0d #141414 #ffffff #00b6ff #181818 #000000 #BA4551 #161616 #b3b3b3 #6e6e6e 2   #303030   dark
-"""
     'dwm-dark': {
         'bg': '#0d0d0d',
         'bg2': '#141414',
@@ -139,5 +136,5 @@ dwm-dark:         #0d0d0d #141414 #ffffff #00b6ff #181818 #000000 #BA4551 #16161
         'lw': 2,
         'gc': '#303030',
         'color': 'dark',
-    },
+    }
 }
