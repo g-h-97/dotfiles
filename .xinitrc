@@ -14,6 +14,7 @@ setxkbmap -option "caps:escape" &
 slstatus &
 wallsxiv r /home/$USER/Pictures/wallpapers/ &
 xrdb -merge ~/.Xresources
+slbatnot &
 eval "$(ssh-agent -s)"
 #fcitx -d &
 dwm
