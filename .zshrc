@@ -61,17 +61,11 @@ alias \
   mkdir="mkdir -p" \
   grep="grep --color=auto" \
   diff="diff --color=auto" \
-  update="yay -Syu" \
-  unins="yay -Rns" \
-  search="yay -Ss" \
   vim="nvim" \
-  v="nvim" \
   vimdiff="nvim -d" \
   ls="ls --color" \
   gcl="git clone" \
-  gbg="git log --graph --simplify-by-decoration --pretty=format:'%d' --all" \
-  mc="minicom" \
-  pc="picocom" \
+  git-status="find . -maxdepth 1 -mindepth 1 -type d -exec sh -c '(echo {} && cd {} && git status -s && echo)' \;"
   xi="doas xbps-install -y" \
   xq="xbps-query -Rs" \
   xr="doas xbps-remove -Ro" \
